@@ -1,0 +1,28 @@
+﻿body {
+    width: 500px;
+    margin:auto;
+    text-align: center;
+    font-size: 3em;
+}
+
+dt{
+    display:block;
+    cursor:pointer;
+    font-weight:bold;
+    font-size: 1em;
+    /*line-height: 4em;*/
+    background: #e3e3e3;
+    border-bottom: 1px solid #c5c5c5;
+    border-top: 1px solid white;
+}
+
+
+dd {
+    margin:0;
+    padding: 1em 0;
+
+}
+
+dt:first-child {border-top:none;}
+
+.hide {display:none;}

@@ -1,0 +1,41 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+
+
+
+    <link href="StyleSheet1.css" rel="stylesheet" />
+</head>
+<body>
+<dl>
+    <dt>What are your hours? </dt>
+    <dd>We are open 24/7.</dd>
+    <dt>What are your hours? </dt>
+    <dd>We are open 24/7.</dd>
+    <dt>What are your hours? </dt>
+    <dd>We are open 24/7.</dd>
+    <dt>What are your hours? </dt>
+    <dd>We are open 24/7.</dd>
+    <dt>What are your hours? </dt>
+    <dd>We are open 24/7.</dd>
+    <dt>What are your hours? </dt>
+    <dd>We are open 24/7.</dd>
+</dl>
+    <script src="scripts/jquery-1.11.0.js"></script>
+    <script>
+        (function () {
+            
+            $('dd').filter(':nth-child(n+4)').addClass('hide');
+
+            $('dl').on('click', 'dt', function () {
+                $(this)
+                    .next()
+                    .slideDown(100)
+                    .siblings('dd').slideUp(100);
+
+            });
+        })();
+    </script>
+</body>
+</html>
